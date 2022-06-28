@@ -1,0 +1,236 @@
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration-line: none;
+    color: inherit;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+body{
+    background-color: white;
+}
+
+header{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30%;
+    background: linear-gradient(90.03deg, #2C3AEB 0.03%, #2FA9E6 99.97%);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    top: 0;
+    left: 0;
+    padding: 15px 0 15px;
+}
+
+.topmenu a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.topmenu a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+.topmenu{
+    list-style: none;
+    gap: 30px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.home{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.home::after{
+    content: " - Design Digital";
+    font-size: 18px;
+    font-weight: 200;
+}
+
+section{
+    padding: 100px 135px;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.paragraphs{
+    height: auto;
+}
+
+section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    background-image: url("../assets/background.avif");
+    filter: opacity(30%) blur(20px);
+}
+
+.contact__fields{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact__fields input,.contact__fields button,.contact__fields .message{
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 10px;
+    border: none;
+    background-color: rgb(180, 180, 180);
+}
+
+.contact__fields .message{
+    resize: none;
+    padding-top: 10px;
+    width: 600px;
+    height: 250px;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact__presentation{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+.contact__fields button{
+    background-color: #2D6FE9;
+    color: white;
+    font-weight: 800;
+    width: 100px;
+}
+
+.checkbox {
+    width: 22px !important;
+    height: 22px !important;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.paragraphs ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 320px);
+    grid-template-rows: masonry;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    width: 100vw;
+    list-style: none;
+}
+
+.paragraphs::before{
+    content: "";
+    background-image: url(../assets/background-decoration.png);
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: -10rem;
+    height: 100%;
+    width: 100%;
+    z-index: -5;
+    opacity: 50%;
+}
+
+.paragraphs li{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: black;
+    width: 320px;
+    background-color: white;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.26);
+    margin: auto;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    max-height: 200px;
+    margin: 0;
+    transition: all 0.3s;
+    border-radius: 10px 10px 0 0;
+}
+
+.container:hover {
+    max-height: 600px;
+    transition: all 0.3s;
+}
+
+.container img{
+    width: 100%;
+}
+
+.paragraphs a{
+    text-align: right;
+    background-color: rgba(17, 71, 172, 0.753);
+    color: white;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 115px;
+    margin: 3% 95%;
+    transform: translate(-100%);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.paragraphs a:hover{
+    background-color: black;
+}
+
+.paragraphs h3{
+    margin: 0 15px;
+}
+
+.paragraphs p{
+    margin: 0 15px;
+}
+
+footer{
+    background-color: rgb(22, 37, 37);
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    color: white;
+    z-index: -4;
+}
